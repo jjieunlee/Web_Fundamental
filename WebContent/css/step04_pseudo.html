@@ -1,0 +1,91 @@
+<!--step04_pseudo.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid plum;
+            background-color: rgb(236, 75, 150);
+        }
+
+        /*hover pseudo class(box에 마우스가 얹어질때)*/
+        .box:hover {
+            background-color: purple;
+        }
+
+        /*focus pseudo class(input부분 누를때)*/
+        input:focus {
+            background-color: red;
+        }
+
+        /*active pseudo class(버튼 누를때)*/
+        button:active {
+            background-color: blue;
+        }
+
+        /*하이퍼링크 밑줄제거하기*/
+        a {
+            /*밑줄제거*/
+            text-decoration: none;
+            color: cadetblue;
+        }
+
+        /*하이퍼링크에 마우스를 얹을때 밑줄*/
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /*한번도 방문하지 않은 link pseudo class*/
+        a:link {
+            color: coral;
+        }
+
+        /*한번방문하면 색깔바뀜*/
+        a:visited {
+            color: cornflowerblue;
+        }
+
+        /*one의 첫번째 글자 변형*/
+        #one::first-letter {
+            font-weight: bold;
+            color: cyan;
+        }
+
+        /*first의 첫번째 줄 문장배경색 변경*/
+        #first::first-line {
+            background-color: gold;
+        }
+
+        /*인용문*/
+        #quote::before {
+            content: "'";
+            color: orchid;
+        }
+
+        #quote::after {
+            content: "'";
+            color: orchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <input type="text">
+    <input type="text">
+    <button>버튼</button>
+    <button>버튼</button><br>
+    <a href="http://www.naver.com">네이버</a>
+    <a href="http://www.google.co.kr">구글</a>
+    <p id="one">I am student</p>
+    <p id="first">I am student</p>
+    <p id="quote">I am student</p>
+</body>
+
+</html>
