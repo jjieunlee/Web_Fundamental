@@ -1,0 +1,48 @@
+<!--step03_Array.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        // 1. 배열 생성 및 할당
+        // const nums = new Array(1,2,3,4);
+        // const nums = Array(1,2,3,4);
+        const nums = [1, 2, 3, 4];
+        const names = ['이지은', '지은이', '은지이'];
+        // 자바스크립트 배열은 모든 자료형을 할당할 수 있음
+        const randoms = [1, '이지은', false];
+
+        console.log(nums.length);//4
+
+        nums[99] = 100;
+
+        console.log(nums.length);//100
+
+        nums.push(5);// 배열추가 - 마지막 자리에 배열 추가
+
+        nums[4] = 5;// 배열추가 - 인덱스로 배열에 문자 추가
+
+        // 배열의 모든 요소를 문자열로 변환
+        let numsToString = nums.join(',');
+
+        console.log(numsToString);
+
+        for (let i = 0; i < nums.length; i++) {
+            console.log(nums[i]);
+        }
+
+        for(let value of nums){
+            console.log(value);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
