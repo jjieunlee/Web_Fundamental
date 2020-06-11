@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $('p').prepend("<strong> Hi </strong>");
+            // $('p').before("<strong> Hi </strong>");
+            // $('p').after("<strong> Hi </strong>");
+            // $("<strong> Hi </strong>").appendTo('p');
+            // $('p').text('제이쿼리');
+            // $('p').html("<strong> Hi </strong>");
+
+            // $('p').html("<strong> 제이쿼리 </strong>");
+            // let msg1 = $('p').text();
+            // let msg2=$('p').html();
+            // console.log(msg1);
+            // console.log(msg2);
+            $('p').wrap('<div></div>');
+            // $('p').remove();
+            // $('p').detach();
+            $('p').empty();
+
+        });
+    </script>
+    <style>
+        div {
+            border: 1px solid blue;
+        }
+
+        p {
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Jquery</p>
+    <div id="Aa">
+        <div>
+            <div>M</div>
+        </div>
+    </div>
+</body>
+
+</html>
